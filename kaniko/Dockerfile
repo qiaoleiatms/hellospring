@@ -68,4 +68,4 @@ ADD config.json /kaniko/.docker/config.json
 
 ENV PATH $PATH:/kaniko
 
-ENTRYPOINT [ "/bin/bash", "-c", "sleep 3600" ]
+ENTRYPOINT [ "tail", "-f", "/dev/null" ]
